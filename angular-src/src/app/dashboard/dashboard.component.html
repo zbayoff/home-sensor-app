@@ -1,0 +1,20 @@
+<p>
+  dashboard works!
+</p>
+
+<button (click)="getRoomData('Saw Room')">Saw Room</button>
+<button (click)="getRoomData('Outside')">Outside</button>
+<button (click)="getRoomData('Bed room')">Bed room</button>
+<button (click)="getRoomData('Bird feeder')">Bird feeder</button>
+<button (click)="getRoomData('Garage room')">Garage room</button>
+<div>
+
+</div>
+
+
+<ul class="list">
+  <li *ngFor="let roomData of roomDatas">
+    {{roomData.SensorValue}}
+  </li>
+
+</ul>

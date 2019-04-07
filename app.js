@@ -1,6 +1,7 @@
-const apis = require("./config/api-config");
-const PORT = 9890;
+const apis = require('./config/api-config');
 
-apis.app.listen(process.env.PORT || PORT, function() {
-    console.log("server connected to port " + PORT);
+const PORT = 3000;
+
+apis.app.listen(process.env.PORT || PORT, () => {
+  console.log(`server connected to port ${PORT}`);
 });
